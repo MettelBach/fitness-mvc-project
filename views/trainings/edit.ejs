@@ -1,7 +1,6 @@
 <!-- views/trainings/edit.ejs -->
 <h2>Edit Training</h2>
-<form action="/trainings/<%= training._id %>" method="POST">
-    <input type="hidden" name="_method" value="PUT"> <!-- Додали метод PUT для відправки форми -->
+<form action="/trainings/<%= training._id %>?_method=PUT" method="POST">
     <%- include('_form_fields') %>
         <a href="/trainings">Cancel</a>
         <button type="submit">Update</button>

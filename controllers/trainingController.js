@@ -26,7 +26,8 @@ exports.training_create_post = async (req, res) => {
         name: req.body.name,
         type: req.body.type,
         duration: req.body.duration,
-        repetitions: req.body.repetitions
+        repetitions: req.body.repetitions,
+        intensity: req.body.intensity
     });
     try {
         await training.save();
@@ -56,7 +57,8 @@ exports.training_update_put = async (req, res) => {
             name: req.body.name,
             type: req.body.type,
             duration: req.body.duration,
-            repetitions: req.body.repetitions
+            repetitions: req.body.repetitions,
+            intensity: req.body.intensity
         });
         res.redirect('/trainings');
     } catch (err) {

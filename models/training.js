@@ -19,7 +19,7 @@ const trainingSchema = new mongoose.Schema({
         required: true
     },
     intensity: {
-        type: String // Додано поле "intensity"
+        type: String
     }
 })
 

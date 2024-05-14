@@ -11,5 +11,9 @@
 <label for="">Repetitions</label>
 <input type="number" name="repetitions" value="<%= training.repetitions %>">
 
-<label for="">Intensity</label> <!-- Додано поле "Intensity" -->
-<input type="text" name="intensity" value="<%= training.intensity %>">
+<label for="">Intensity</label>
+<select name="intensity">
+    <option value="short" <%= training.intensity === 'short' ? 'selected' : '' %>>Short</option>
+    <option value="medium" <%= training.intensity === 'medium' ? 'selected' : '' %>>Medium</option>
+    <option value="long" <%= training.intensity === 'long' ? 'selected' : '' %>>Long</option>
+</select>

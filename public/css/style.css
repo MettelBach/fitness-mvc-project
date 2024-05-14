@@ -95,7 +95,8 @@ form label {
 }
 
 form input[type="text"],
-form input[type="number"] {
+form input[type="number"],
+form select {
     width: 100%;
     /* Make inputs full width */
     padding: 10px;

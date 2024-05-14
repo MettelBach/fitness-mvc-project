@@ -24,9 +24,19 @@ header {
     /* Dark grey background */
     color: #fff;
     /* White text color */
-    padding: 10px 0;
-    /* Add some padding */
+    padding: 10px 20px;
+    /* Add padding */
 }
+
+.fitApp {
+    color: white;
+}
+
+.edit {
+    color: rgb(202, 0, 0);
+
+}
+
 
 header nav {
     display: flex;
@@ -56,6 +66,13 @@ header nav ul li a {
     /* White text color for links */
     text-decoration: none;
     /* Remove underline */
+}
+
+header h1 {
+    margin: 0;
+    /* Remove margin */
+    font-size: 24px;
+    /* Increase font size */
 }
 
 /* Main content styles */

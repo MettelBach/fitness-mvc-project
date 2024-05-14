@@ -1,0 +1,147 @@
+/* public/css/style.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    /* Light grey background */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    /* Maximum width for content */
+    margin: 0 auto;
+    /* Center content horizontally */
+    padding: 20px;
+    /* Add some padding */
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    /* Dark grey background */
+    color: #fff;
+    /* White text color */
+    padding: 10px 0;
+    /* Add some padding */
+}
+
+header nav {
+    display: flex;
+    /* Display navigation items horizontally */
+    justify-content: space-between;
+    /* Space items evenly */
+    align-items: center;
+    /* Center items vertically */
+}
+
+header nav ul {
+    list-style-type: none;
+    /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    /* Display list items inline */
+    margin-right: 20px;
+    /* Add some space between items */
+}
+
+header nav ul li a {
+    color: #fff;
+    /* White text color for links */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+/* Main content styles */
+main {
+    padding: 20px 0;
+    /* Add some padding */
+}
+
+/* Form styles */
+form {
+    margin-bottom: 20px;
+    /* Add some space at the bottom */
+}
+
+form label {
+    display: block;
+    /* Display labels as block elements */
+    margin-bottom: 5px;
+    /* Add some space at the bottom */
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: 100%;
+    /* Make inputs full width */
+    padding: 10px;
+    /* Add some padding */
+    margin-bottom: 10px;
+    /* Add some space at the bottom */
+    box-sizing: border-box;
+    /* Include padding and border in width */
+}
+
+form button {
+    padding: 10px 20px;
+    /* Add padding */
+    background-color: #333;
+    /* Dark grey background */
+    color: #fff;
+    /* White text color */
+    border: none;
+    /* Remove border */
+    cursor: pointer;
+    /* Add pointer cursor */
+}
+
+/* Training list styles */
+.training-list {
+    display: grid;
+    /* Use grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* Responsive grid */
+    grid-gap: 20px;
+    /* Add some space between items */
+}
+
+.training-item {
+    background-color: #fff;
+    /* White background */
+    padding: 20px;
+    /* Add padding */
+    border-radius: 5px;
+    /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add shadow */
+}
+
+.training-item h3 {
+    margin-top: 0;
+    /* Remove top margin for heading */
+}
+
+/* Error message styles */
+.error-message {
+    color: red;
+    /* Red text color */
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    /* Dark grey background */
+    color: #fff;
+    /* White text color */
+    padding: 20px 0;
+    /* Add some padding */
+    text-align: center;
+    /* Center text */
+}

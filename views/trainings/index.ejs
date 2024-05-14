@@ -1,15 +1,15 @@
 <!-- views/trainings/index.ejs -->
-<!-- Приклад views/trainings/index.ejs -->
+
 <main class="container">
     <h2>Search Trainings</h2>
-    <form class="search-form" action="/trainings" method="GET"> <!-- Додайте клас search-form -->
+    <form class="search-form" action="/trainings" method="GET">
         <label>Name</label>
         <input type="text" name="name" value="<%= searchOptions.name %>">
         <button type="submit">Search</button>
     </form>
-    <div class="training-list"> <!-- Додайте клас training-list -->
+    <div class="training-list">
         <% trainings.forEach(training=> { %>
-            <div class="training-item"> <!-- Додайте клас training-item -->
+            <div class="training-item">
                 <h3>
                     <%= training.name %>
                 </h3>
@@ -20,6 +20,7 @@
                 </p>
                 <p>Intensity: <%= training.intensity %>
                 </p>
+                <a href="/trainings/<%= training._id %>/edit">Edit</a>
             </div>
             <% }) %>
     </div>
